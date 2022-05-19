@@ -1,0 +1,263 @@
+/*
+=======================================================================
+[Table of contents]
+=========================================================================
+01. COMMON STYLES 
+02. HEADER 
+03. NAV 
+04. WELCOME SECTION 
+*/
+
+/*---------------------------------------
+PRELOADER STYLES             
+-----------------------------------------*/
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    transition: 1s 0.4s;
+    z-index: 9999999;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:50%;
+}
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
+
+/*---------------------------------------
+COMMON STYLES             
+-----------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden !important;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden !important;
+}
+a, a:hover, a:focus {
+    color: #50B848;
+    outline: none;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+p{
+    margin: 0;
+}
+.container {
+    position: relative;
+}
+.page .lazy-hidden, .page .entry img.lazy-hidden, .page img.thumbnail.lazy-hidden {
+    opacity: 1;
+    background-color: transparent;
+}
+@media screen and (min-width: 1700px) {
+    .container {
+        max-width: 1300px;
+    }
+    .fullpage-wrapper .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1600px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .elementor-section.elementor-inner-section.elementor-section-boxed > .elementor-container {
+        max-width: 1600px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .single-director .elementor-section.elementor-inner-section.elementor-section-boxed > .elementor-container {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .container {
+        max-width: calc(100% - 100px);
+    }
+    .fullpage-wrapper .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: calc(100% - 100px);
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .elementor-section.elementor-inner-section.elementor-section-boxed > .elementor-container {
+        max-width: calc(100% - 100px);
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .single-director .elementor-section.elementor-inner-section.elementor-section-boxed > .elementor-container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1075px) {
+    .container {
+        max-width: 100%;
+    }
+    .fullpage-wrapper .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .elementor-section.elementor-inner-section.elementor-section-boxed > .elementor-container {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+.parallaxParent {
+    height: 100vh;
+}
+.parallaxParent > * {
+    height: 100%;
+    position: relative;
+}
+.parallaxParent .elementor-container {
+    height: 100%;
+}
+.parallaxParent .elementor-element {
+    height: 100%;
+}
+.parallaxParent .elementor-widget-container {
+    height: 100%;
+    display: flex;
+    flex-flow: wrap row;
+}
+@media screen and (max-width: 1075px) {
+    .front-page .page-content {
+        padding-right: 65px;
+        background-color: #363636;
+    }
+}
+
+
+
+/* ------------------------------   banner area   ------------------------------ */
+
+
+.exceed-banner {
+    background-color: #2E2E2E;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner-row {
+    display: flex;
+    align-items: center;
+}
+.content-area,
+.video-content-area {
+    width: 50%;
+    max-width: 650px;
+}
+.global-satellite-container {
+    margin: 0 auto;
+    padding: 209px 0 116px;
+}
+.global-satellite-container h2 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 73px;
+    color: #FFFFFF;
+    max-width: 510px;
+    margin-bottom: 36.5px;
+}
+.global-satellite-container .sub-title-area {
+    font-size: 35px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.global-satellite-container .sub-title-area span:first-child {
+    font-weight: 300;
+
+}
+.global-satellite-container .sub-title-area span:last-child {
+    font-weight: 600;
+    color: #50B848;
+}
+a.download-flyer-btn {
+    background-color: #50B848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18.65px;
+    line-height: 20px;
+    padding: 18px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a.download-flyer-btn span:first-child {
+    margin-right: 15px;
+}
+a.download-flyer-btn span:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: #FFF;
+}
+.video-content-area {
+    display: flex;
+    justify-content: flex-end;
+}
+.video-bg-img {
+    width: 100%;
+    height: 100%;
+    min-height: 445px;
+    background: left no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 590.76px;
+    border: .1rem solid #50B848;
+    border-radius: 22px;
+    box-shadow: 0px 4px 44px #1A1717;
+}
+a.video-play-btn {
+    width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(120 195 112 / 90%);
+    border: 5px solid #50B848;
+    box-shadow: 0px 14.96px 46.5px #449F3D;
+}
