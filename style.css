@@ -261,3 +261,150 @@ a.video-play-btn {
     border: 5px solid #50B848;
     box-shadow: 0px 14.96px 46.5px #449F3D;
 }
+
+/* -------------------------------   zoleo connection that matter   ------------------------------- */
+
+
+.zoleo_connections-that-matter {
+    background-color: #f8f8f8;
+}
+.zoleo_connections-that-matter .container {
+    margin: 0 0 0 auto;
+    padding-left: 208px;
+    padding-right: 310px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    background-color: #2E2E2E;
+    color: #FFF;
+    z-index: 1;
+}
+.zoleo_connections-that-matter .container::after {
+    position: absolute;
+    content: '';
+    width: calc(100% - 50px);
+    height: 1px;
+    border-bottom: 1px solid #58595B;
+    top: 232px;
+    left: 50px;
+    z-index: -2;
+}
+.zoleo_bg-x-icon {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -412px;
+    mix-blend-mode: darken;
+}
+.zoleo_connection-mobile-product-img {
+    position: absolute;
+    z-index: -1;
+    top: 83px;
+    left: -530px;
+}
+.zoleo_connections-that-matter h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+    color: #50B848;
+    margin-bottom: 60px;
+}
+.zoleo_connections-that-matter .single-feature-content {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 25px 0;
+    position: relative;
+}
+.zoleo_connections-that-matter .single-feature-content:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: calc(100% - 10px);
+    left: 10px;
+    bottom: 0;
+    border-bottom: 1px solid #58595B;
+}
+.zoleo_connections-that-matter .icon-container {
+    max-width: 40px;
+    max-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 33px;
+}
+.zoleo_connections-that-matter .content-area {
+    width: 100%;
+    max-width: 650px;
+}
+.zoleo_connections-that-matter .feature-text-content {
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+}
+.connection-subscription-area {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    color: #50B848;
+}
+
+
+/* -------------------------------   zoleo SOS area   ------------------------------- */
+
+
+
+
+.zoleo_sos-featuer-area .container {
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.zoleo_sos-feature-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.zoleo_sos-featuer-area .content-container {
+    width: 100%;
+    max-width: 698px;
+}
+.zoleo_sos-feature-row h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #50B848;
+    margin-bottom: 30px;
+}
+.zoleo_sos-feature-row .description-container {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 39px;
+    color: #353535;
+}
+.zoleo_sos-feature-row .img-container {
+    width: 100%;
+    max-width: 582px;
+}
+.zoleo_sos-feature-row .img-container img {
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
