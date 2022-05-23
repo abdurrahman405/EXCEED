@@ -598,22 +598,22 @@ a.video-play-btn {
 
 
 
-.cloud-management-area {
+.cloud-management-area-first {
     background-color: #3A3A3A;
     color: #FFF;
     padding: 90px 0 145px;
 }
 
-.cloud-management-area .container {
+.cloud-management-area-first .container {
     margin: 0 auto;
 }
 
-.cloud-management-content-area {
+.cloud-management-area-first .cloud-management-content-area {
     display: flex;
     justify-content: space-between;
 }
 
-.cloud-management-row .title-row h2 {
+.cloud-management-area-first .title-row h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 49px;
@@ -622,11 +622,11 @@ a.video-play-btn {
     margin-bottom: 110px;
 }
 
-.cloud-management-content-area .feature-area {
+.cloud-management-area-first .feature-area {
     margin-bottom: 55px;
 }
 
-.cloud-management-row .feature-container h2 {
+.cloud-management-area-first .feature-container h2 {
     color: #fff;
     font-weight: 500;
     font-size: 26px;
@@ -635,16 +635,16 @@ a.video-play-btn {
     margin-bottom: 32px;
 }
 
-.cloud-management-content-area .single-feature {
+.cloud-management-area-first .single-feature {
     display: flex;
     font-size: 18px;
     line-height: 22px;
 }
 
-.cloud-management-content-area .single-feature:not(:last-child) {
+.cloud-management-area-first .single-feature:not(:last-child) {
     margin-bottom: 15px;
 }
-.cloud-management-content-area .icon-container {
+.cloud-management-area-first .cloud-management-content-area .icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -653,7 +653,7 @@ a.video-play-btn {
     height: 22px;
 }
 
-.cloud-management-content-area .text-container {
+.cloud-management-area-first .cloud-management-content-area .text-container {
     width: 100%;
     max-width: 470px;
 }
@@ -663,7 +663,7 @@ a.netcloud-logo-btn {
     margin-bottom: 65px;
 }
 
-.cloud-management-content-area a.learn-more-btn {
+.cloud-management-area-first a.learn-more-btn {
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
@@ -679,13 +679,13 @@ a.netcloud-logo-btn {
     justify-content: space-between;
 }
 
-.cloud-management-content-area a.learn-more-btn span {
+.cloud-management-area-first a.learn-more-btn span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cloud-management-row .feature-img-container h2:first-child {
+.cloud-management-area-first .feature-img-container h2:first-child {
     font-size: 32px;
     line-height: 26px;
     color: #FFFFFF;
@@ -698,7 +698,7 @@ a.netcloud-logo-btn {
     margin-bottom: 23px;
 }
 
-.cloud-management-row .feature-img-container h2:last-child {
+.cloud-management-area-first .feature-img-container h2:last-child {
     font-weight: 500;
     font-size: 26px;
     line-height: 50px;
@@ -712,7 +712,68 @@ a.netcloud-logo-btn {
 
 
 
-.cloud-management-area-two .container {
+.cloud-management-area-second .container {
     margin: 0 auto;
     padding: 110px 0 145px;
+}
+.cloud-management-area-second .cloud-management-content-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cloud-management-area-second .title-row h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 49px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.cloud-management-area-second .sub-title-row {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    color: #3a3a3a;
+    text-align: center;
+    margin-bottom: 110px;
+}
+.cloud-management-area-second .single-feature:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+.cloud-management-area-second .feature-container {
+    max-width: 585px;
+    width: 100%;
+    padding: 66px;
+    background: #F8F8F8;
+    border-radius: 15px;
+    margin: 0 20px 0 25px;
+}
+.cloud-management-area-second .title-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.cloud-management-area-second .icon-container {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+.cloud-management-area-second .feature-container h2 {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 34px;
+}
+.cloud-management-area-second .feature-container .content-container {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    color: #58595B;
+}
+.cloud-management-area-second .feature-img-container {
+    width: 100%;
+    max-width: 670px;
 }
