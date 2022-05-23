@@ -397,23 +397,23 @@ a.video-play-btn {
 
 /* -------------------   Leader in Enterprise   ------------------- */
 
-
+.cradlepoint_leader-in-enterprise {
+    padding: 120px 0;
+}
 .cradlepoint_leader-in-enterprise .container {
     margin: 0 auto;
-    padding: 120px 0;
+}
+.cradlepoint_leader-in-enterprise .title-area {
+    margin-bottom: 78px;
 }
 .cradlepoint_leader-in-enterprise .title-area h2 {
     text-align: center;
     font-weight: 600;
     font-size: 44px;
     line-height: 49px;
-    margin-bottom: 78px;
 }
-.cradlepoint_leader-in-enterprise .title-area span:first-child {
+.cradlepoint_leader-in-enterprise .title-area span {
     color: #58595B;
-}
-.cradlepoint_leader-in-enterprise .title-area span:last-child {
-    color: #50B848;
 }
 .cradlepoint_leader-in-enterprise .feature-row {
     display: flex;
@@ -421,8 +421,7 @@ a.video-play-btn {
 }
 .cradlepoint_leader-in-enterprise .single-feature {
     display: flex;
-    width: 100%;
-    max-width: 420px;
+    width: calc(33.33% - 13px);
     padding: 35px 10px 35px 44px;
     border: 1px solid #DADADA;
     border-radius: 18px;
@@ -466,8 +465,12 @@ a.video-play-btn {
 
 .crodlepoit_enterprise-hardware {
     background-color: #F8F8F8;
+    padding-top: 110px;
+    padding-bottom: 145px;
 }
-
+.crodlepoit_enterprise-hardware .container {
+    margin: 0 auto;
+}
 .enterprise-hardware-product-row,
 .hardware-office-product-row,
 .hardware-five-g-adaptors-product-row {
@@ -475,26 +478,25 @@ a.video-play-btn {
 }
 .hardware-five-g-adaptors-product-row {
     margin-bottom: 0;
-    padding-bottom: 145px;
 }
-.crodlepoit_enterprise-hardware .container {
-    margin: 0 auto;
-    padding-top: 110px;
+.crodlepoit_enterprise-hardware .title-row {
+    margin-bottom: 60px;
 }
 .crodlepoit_enterprise-hardware .title-row h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 49px;
     text-align: center;
-    margin-bottom: 60px;
 }
 .crodlepoit_enterprise-hardware .single-product {
     display: flex;
     position: relative;
-    padding: 41px 10px 41px 25px;
+    padding: 41px 10px 35px 25px;
     border-radius: 15px;
     z-index: 1;
-    max-height: 231px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }
 .enterprise-hardware-product-row .single-product {
     background-color: #FFF;
@@ -514,12 +516,6 @@ a.video-play-btn {
 .crodlepoit_enterprise-hardware .single-product:not(:last-child){
     margin-bottom: 20px;
 }
-.crodlepoit_enterprise-hardware .product-bg-x-icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
 .crodlepoit_enterprise-hardware .product-img-container {
     width: 100%;
     max-width: 380px;
@@ -533,16 +529,19 @@ a.video-play-btn {
 .product-detail-container {
     padding: 10px 0;
 }
+.product-detail-container .product-title {
+    margin-bottom: 25px;
+}
 .product-detail-container h2 {
     font-weight: 600;
     font-size: 30px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-bottom: 25px;
 }
 .product-detail-container .product-features {
     display: flex;
     flex-direction: column;
+    min-height: 98px;
 }
 .product-detail-container .single-feature {
     display: flex;
@@ -573,19 +572,21 @@ a.video-play-btn {
 
 
 
-
-.telstra-direct-access .container {
-    margin: 0 auto;
+.telstra-direct-access {
     padding-top: 135px;
     padding-bottom: 78px;
 }
-
+.telstra-direct-access .container {
+    margin: 0 auto;
+}
+.telstra-direct-access .title-row {
+    margin-bottom: 100px;
+}
 .telstra-direct-access h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 49px;
     text-align: center;
-    margin-bottom: 100px;
 }
 .telstra-direct-access .feature-img-container {
     width: 100%;
@@ -610,16 +611,18 @@ a.video-play-btn {
 
 .cloud-management-area-first .cloud-management-content-area {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.cloud-management-area-first .title-row {
+    margin-bottom: 110px;
+}
 .cloud-management-area-first .title-row h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 49px;
     text-align: center;
     color: #50B848;
-    margin-bottom: 110px;
 }
 
 .cloud-management-area-first .feature-area {
@@ -684,7 +687,9 @@ a.netcloud-logo-btn {
     align-items: center;
     justify-content: center;
 }
-
+.cloud-management-area-first .feature-img-container {
+    width: 625px;
+}
 .cloud-management-area-first .feature-img-container h2:first-child {
     font-size: 32px;
     line-height: 26px;
@@ -692,11 +697,10 @@ a.netcloud-logo-btn {
     margin-bottom: 42px;
 }
 
-.cloud-management-feature-img {
-    width: 100%;
-    max-width: 625px;
+.cloud-management-app-feature-img {
     margin-bottom: 23px;
 }
+
 
 .cloud-management-area-first .feature-img-container h2:last-child {
     font-weight: 500;
@@ -711,15 +715,19 @@ a.netcloud-logo-btn {
 
 
 
-
+.cloud-management-area-second {
+    padding: 110px 0 145px;
+}
 .cloud-management-area-second .container {
     margin: 0 auto;
-    padding: 110px 0 145px;
 }
 .cloud-management-area-second .cloud-management-content-area {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+.cloud-management-area-second .title-row {
+    margin-bottom: 110px;
 }
 .cloud-management-area-second .title-row h2 {
     font-weight: 600;
@@ -734,7 +742,6 @@ a.netcloud-logo-btn {
     line-height: 34px;
     color: #3a3a3a;
     text-align: center;
-    margin-bottom: 110px;
 }
 .cloud-management-area-second .single-feature:not(:last-child) {
     padding-bottom: 20px;
